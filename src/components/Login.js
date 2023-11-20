@@ -14,7 +14,7 @@ export default function Login({setIsLogin}) {
     const registerSubmit = async e =>{
         e.preventDefault()
         try {
-            const res = await axios.post('http://localhost:7000/users/register',{
+            const res = await axios.post('https://notes-api-qbrw.onrender.com/users/register',{
                 username: user.name,
                 email: user.email,
                 password: user.password
@@ -29,7 +29,7 @@ export default function Login({setIsLogin}) {
     const loginSubmit = async e =>{
         e.preventDefault()
         try {
-            const res = await axios.post('http://localhost:7000/users/login',{
+            const res = await axios.post('https://notes-api-qbrw.onrender.com/users/login',{
                 email: user.email,
                 password: user.password
             })

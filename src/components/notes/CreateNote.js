@@ -26,7 +26,7 @@ export default function CreateNote() {
                     title, content, date
                 }
 
-                await axios.post('http://localhost:7000/api/notes', newNote, {
+                await axios.post('https://notes-api-qbrw.onrender.com/api/notes', newNote, {
                     headers: {Authorization: token}
                 })
                 
